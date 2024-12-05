@@ -1,0 +1,63 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e8e8e8;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+
+.delete-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: #e53935;
+}
+
+.password-warning {
+  color: #ff9800;
+}
+
+/* Signin Link */
+.signin-link {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.signin-link a {
+  color: #ff9800;
+  text-decoration: none;
+}
+
+.signin-link a:hover {
+  text-decoration: underline;
+}
+
+/* Error and Success Messages */
+.error-message {
+  color: red;
+  margin-bottom: 10px;
+}
+
+.success-message {
+  color: green;
+  margin-bottom: 10px;
+}
+
+.no-users {
+  text-align: center;
+  font-style: italic;
+}

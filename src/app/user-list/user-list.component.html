@@ -1,0 +1,20 @@
+<div class="user-list-container">
+<h2>Users</h2>
+
+<!-- Display a message if there are no users -->
+<p *ngIf="users.length === 0" class="no-users">No users registered yet.</p>
+
+<ul>
+  <!-- Iterate over users and display each user's details -->
+  <li *ngFor="let user of users" (click)="deleteUser(user.username)">
+    <!-- Display user details -->
+    <div>
+      <span class="username">{{ user.username }}</span> 
+      <span class="name">{{ user.firstname }} {{ user.lastname }}</span>
+
+      <!-- Password strength warning if password is too short -->
+      <span *ngIf="user.password.length < 6" class="password-warning">(Weak Password)</span>
+    </div>
+  </li>
+</ul>
+</div>

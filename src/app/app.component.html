@@ -1,0 +1,14 @@
+<div class="app-container">
+
+<!-- Register Component -->
+<app-register (userAdded)="onUserAdded($event)"></app-register>
+
+<!-- User List Component -->
+<app-user-list
+  [users]="users"
+  (userDeleted)="onUserDeleted($event)">
+</app-user-list>
+
+<!-- Link to Signin Page -->
+
+</div>

@@ -1,0 +1,26 @@
+/* Optional styles for the app */
+h1 {
+  color: #333;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.user-list-container {
+  margin-top: 20px;
+
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 8px;
+  cursor: pointer;
+}
+
+li:hover {
+  background-color: #f0f0f0;
+}
